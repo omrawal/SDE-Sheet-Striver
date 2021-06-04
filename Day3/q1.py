@@ -25,7 +25,7 @@ def better1(mat, key):
         left = 0
         right = n-1
         while(left < right):
-            mid = (left+right)//2
+            mid = (left+(right-left))//2
             if(mat[i][mid] == key):
                 return True
             elif(mat[i][mid] > key):
@@ -61,7 +61,7 @@ def optimal(mat, target):
     low = 0
     high = m*n-1
     while(low <= high):
-        mid = (low+high)//2
+        mid = (low+(high-low))//2  # WOW no int overflow
         i = mid//n
         j = mid % n
         if(mat[i][j] == target):
