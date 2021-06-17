@@ -23,9 +23,18 @@ class Solution:
 
         t = head
         while(t != None):
-            hashset[t].next = hashset[t.next]
-            hashset[t].random = hashset[t.random]
+            hashset[t].next = hashset.get(t.next)
+            hashset[t].random = hashset.get(t.random)
             t = t.next
-        newhead = hashset[head]
+        # newhead = hashset[head]
 
-        return newhead
+        return hashset.get(head)
+
+# Time = O(n)+O(n)=O(2n)=O(n)
+# Space = O(n)
+
+# Optimal
+#
+# Create copy node and insert right after the original one
+# now solving the problem of random pointer now its just the next of destination pointer
+# resetting the pointers and separating the list
