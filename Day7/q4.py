@@ -1,7 +1,7 @@
 # remove duplicates from sorted array
 
 # brute
-# create a new list and add onlu unique elements
+# create a new list and add only unique elements
 
 
 def brute(nums):

@@ -10,8 +10,6 @@ class Node:
         self.next = next
         self.random = random
 
-# incorrect output
-
 
 class Solution:
     def copyRandomList(self, head: 'Node') -> 'Node':
