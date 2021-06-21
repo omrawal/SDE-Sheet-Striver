@@ -13,3 +13,6 @@ def coinChange(self, coins, amount) -> int:
         if(target == 0):
             break
     return coin_count
+
+# Time O(n)
+# Space O(1)
