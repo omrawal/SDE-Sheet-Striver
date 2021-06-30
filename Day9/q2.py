@@ -5,16 +5,16 @@
 
 # 2^n  2^nlog 2^n
 
-# Incorrect
+ansList = []
 
 
-def rec(ind, nums, ds, ans):
-    ans.append(ds)
+def rec(self, ind, nums, ds):
+    self.ansList.add(tuple(ds.copy()))
     for i in range(ind, len(nums)):
         if(i != ind and nums[i] == [i-1]):
             continue
-        ds.append[nums[i]]
-        rec(ind=i+1, nums=nums, ds=ds, ans=ans)
+        ds.append(nums[i])
+        self.rec(i+1, nums, ds)
         ds.pop(-1)
 
 
