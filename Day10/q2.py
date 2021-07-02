@@ -1,5 +1,10 @@
 # N queens problem
 
+
+# brute force
+# for  optimal logic refer notebook
+
+
 # queen no. is same as row no. +1
 # matric is chess board
 # import copy
@@ -38,13 +43,13 @@ def isSafe(row, col, matrix):
     n = len(matrix)
     # queens can only be in N,W,NW dirs
 
-    # North
-    r = row-1
-    c = col
-    while(r >= 0):
-        if(matrix[r][c] == 'Q'):
-            return False
-        r -= 1
+    # # North
+    # r = row-1
+    # c = col
+    # while(r >= 0):
+    #     if(matrix[r][c] == 'Q'):
+    #         return False
+    #     r -= 1
 
     # North West
     r = row
@@ -104,7 +109,9 @@ def solve(col, matrix, ans):
 
 def nqueen(n):
     # matrix = [['.']*n]*n
-    matrix = [['.' for i in range(n)] for j in range(n)]
+    cols = n
+    rows = n
+    matrix = [['.' for i in range(cols)] for j in range(rows)]
     ans = list()
     solve(0, matrix, ans)
     return ans
