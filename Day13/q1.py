@@ -2,7 +2,7 @@
 class MyStack:
 
     def __init__(self):
-        self.arr = ['None' for i in range(100)]
+        self.arr = [None for i in range(100)]
         self.pointer = -1
     # Function to push an integer into the stack.
 
