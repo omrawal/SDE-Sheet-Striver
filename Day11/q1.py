@@ -22,3 +22,5 @@ def findRoot(n, m):
 m = 5
 n = 2
 print(findRoot(n, m))
+
+# Time O(n log m*10)
