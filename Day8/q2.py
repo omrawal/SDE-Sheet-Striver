@@ -8,8 +8,8 @@ def minPlatform(n, arr, dep):
         return n
     arr.sort()
     dep.sort()
-    platform_needed = 1
-    result = 1
+    platform_needed = 0
+    result = 0
     i = 0
     j = 0
     while(i < n and j < n):
