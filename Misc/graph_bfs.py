@@ -1,3 +1,4 @@
+# breadth first search (uses queue)
 nodes = [1, 2, 3, 4, 5, 6, 7]
 edges = [(1, 2), (2, 3), (3, 5), (5, 7), (2, 7), (4, 6)]
 
