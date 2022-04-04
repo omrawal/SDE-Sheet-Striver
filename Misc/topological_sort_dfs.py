@@ -25,7 +25,7 @@ def topoDFS(node, adjList, visited, stack):
 def getTopologicalSort(adjList):
     visited = [0]*len(adjList)
     stack = []
-    for i in range(0, len(adjList)):
+    for i in range(0, len(adjList)-1):
         if(visited[i] == 0):
             topoDFS(i, adjList, visited, stack)
     topoSort = []
